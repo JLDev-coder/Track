@@ -1,0 +1,29 @@
+header {
+  text-align: end;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+}
+
+header nav {
+  margin-right: 50px;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 15px 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.logo-text {
+  margin-right: 870px;
+  font-size: 25px;
+}
+
+a:hover {
+  color: #1b74ee;
+  transition: 0.3s;
+}

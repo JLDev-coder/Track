@@ -1,0 +1,105 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout
+  title="Track · Mejora tu inglés con los mejores recursos educativos"
+  icon="/public/track-logo.jpg"
+>
+  <!--Recordar poner ruta para el icono -->
+  <main>
+    <section>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <div class="container mb-32">
+        <div class="nuestra-mision">
+          <h1 class="">Nuestra misión</h1>
+          <p class="">
+            Nuestro objetivo con <strong>Track</strong> es poder ayudar tanto a maestros
+            como alumnos a poder mejorar en inglés con estos recursos educativos.
+          </p>
+        </div>
+
+        <div class="nuestros-recursos mt-[70px]">
+          <h1 class="">Nuestros recursos</h1>
+          <p>
+            Hemos hecho una cuidadosa selección de recursos acorde a las
+            recomendaciones de docentes profesionales en la materia de inglés.
+          </p>
+        </div>
+
+        <div class="nuestros-recursos mt-[70px]">
+          <h1 class="">Aprende con juegos</h1>
+          <p>
+            Aparte de los recursos previamente mencionados, tambien tenemos una
+            sección de juegos que se actualiza mensualmente, con fines
+            educativos y didacticos
+          </p>
+        </div>
+
+        <div class="sugerencias mt-[70px]">
+          <h1>Sugerencias</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod sit
+            fugit maiores facere temporibus laudantium amet asperiores harum.
+            Reprehenderit animi quae perferendis nemo asperiores nisi ab
+            laudantium ipsa in libero.
+          </p>
+        </div>
+      </div>
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </main>
+  <Footer trackLink="#sugerencias" />
+</Layout>
+
+<style>
+  main {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  .nuestra-mision,
+  .nuestros-recursos,
+  .sugerencias {
+    background-color: #fff;
+    padding: 10px 15px 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 65%;
+    animation-fill-mode: both;
+  }
+
+  @keyframes show {
+    from {
+      opacity: 0;
+      scale: 25%;
+    }
+
+    to {
+      opacity: 1;
+      scale: 100%;
+    }
+  }
+</style>
